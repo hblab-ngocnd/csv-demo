@@ -1,0 +1,7 @@
+,
+.work_week_hours,.work_week_hours,.payslip_member_type
+[kanri]
+.pension_number,.occupation
+[data],
+.my_number_select,.pension_number,
+to-upper .my_number_select,to-upper .bank_name,eee .account_name
