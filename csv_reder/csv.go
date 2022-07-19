@@ -80,7 +80,7 @@ func getValue(e string, mapData map[string]string) string {
 		v, err = f(mapData[arr[1][1:]])
 	}
 	if err != nil {
-		panic(err)
+		log.Println(err)
 		return ""
 	}
 	return v
