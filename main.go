@@ -124,7 +124,7 @@ func main() {
 	  "work_week_hours": "33",
 	  "work_week_minutes": "4"
 	}`
-	err := csv_reder.RenderData("template.csv", "records.csv", jsonData)
+	err := csv_reder.ParserData("template.csv", "records.csv", jsonData)
 	if err != nil {
 		log.Fatal(err)
 	}

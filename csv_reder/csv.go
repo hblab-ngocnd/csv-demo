@@ -37,7 +37,7 @@ func RenderData(template, out string, jsonData string) error {
 	for _, elements := range settings {
 		rows := make([]string, len(elements))
 		for i, e := range elements {
-			rows[i] = getValue(e, mapData)
+			rows[i] = parserValue(e, mapData)
 		}
 		results = append(results, rows)
 	}
@@ -54,7 +54,7 @@ func RenderData(template, out string, jsonData string) error {
 	}
 	return nil
 }
-func getValue(e string, mapData map[string]string) string {
+func parserValue(e string, mapData map[string]string) string {
 	e = strings.TrimLeft(e, " ")
 	if len(e) == 0 {
 		return ""
