@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"csv-demo/csv_reder"
+	"github.com/hblab-ngocnd/csv-demo/csv_reder"
 )
 
 var jsonData = `{

@@ -1,4 +1,4 @@
-company__corporateNumber,{{.col1_2}} {{.col2_3}}
+company__corporateNumber,{{.col2_2}}-{{.col2_3}}
 em_street,{{.col4_2}}
 em_building_kana,{{.col4_3}}
 company__street,{{get_value .col5_1}}
