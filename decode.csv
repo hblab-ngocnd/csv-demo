@@ -2,3 +2,4 @@ company__corporateNumber,{{.col2_2}}-{{.col2_3}}
 em_street,{{.col4_2}}
 em_building_kana,{{.col4_3}}
 company__street,{{get_value .col5_1}}
+test__concat,{{con_cat .col5_1 .col4_3 .col4_2 "dasdadas"}}
