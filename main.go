@@ -1,13 +1,13 @@
 package main
 
 import (
+	"fmt"
 	"log"
 
 	"csv-demo/csv_reder"
 )
 
-func main() {
-	var jsonData = `{
+var jsonData = `{
 	  "": "",
 	  "": "",
 	  "account_name": "ディモフ　リエコ",
@@ -124,8 +124,15 @@ func main() {
 	  "work_week_hours": "33",
 	  "work_week_minutes": "4"
 	}`
+
+func main() {
 	err := csv_reder.ParserData("template.csv", "records.csv", jsonData)
 	if err != nil {
 		log.Fatal(err)
 	}
+	result, err := csv_reder.DecodeData("records.csv", "decode.csv")
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Println(result)
 }
