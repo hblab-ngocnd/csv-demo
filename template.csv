@@ -1,5 +1,0 @@
-,
-{{.work_week_hours}},{{.work_week_hours}},{{.payslip_member_type}}
-[kanri]
-{{split_value_dash .business_owner_phone 1}},{{.cell_phone}},{{.commuting_route}}
-{{ if or (eq .account_type "1") (eq .account_type "2") }}haha{{else}}caca{{end}},
